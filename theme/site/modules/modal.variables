@@ -1,0 +1,6 @@
+@background: #181818;
+@headerColor: @white;
+
+@contentBackground: transparent;
+@headerBackground: transparent;
+@actionBackground: transparent;

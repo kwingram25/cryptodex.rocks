@@ -1,0 +1,15 @@
+{
+  "components.Footer.copyright": "© 2018",
+  "components.Branding.app_name": "Cryptodex",
+  "components.Branding.tagline": "Your all-in-one cryptocurrency address book",
+  "components.GetButtons.direct_download": "Get it for Chrome",
+  "components.GetButtons.webstore": "View on Chrome Webstore",
+  "components.GetButtons.available": "Available for Chrome",
+  "components.GetButtons.coming_soon": "Coming soon for Chrome",
+  "components.GetButtons.already_installed": "You have it!",
+  "components.HomePageSlider.demo1": "Your crypto addresses, one click away",
+  "components.HomePageSlider.demo2": "Address validation & verification",
+  "components.HomePageSlider.demo3": "Right click to paste, highlight to verify",
+  "components.HomePageSlider.demo4": "Over two dozen currencies supported",
+  "containers.NotFoundPage.header": "Page not found"
+}

@@ -1,0 +1,10 @@
+{
+  "env": {
+    "NODE_ENV": "production",
+    "SMTP_USERNAME" : "@smtp-username",
+    "SMTP_PASSWORD": "@smtp-password",
+    "SMTP_RECIPIENT": "@smtp-recipient",
+    "RELEASED": "true"
+  },
+  "alias": "cryptodex.rocks"
+}

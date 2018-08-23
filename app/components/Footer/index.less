@@ -1,0 +1,49 @@
+@import '../../../theme/breakpoints.less';
+
+.notFixed {
+  position: initial;
+  padding: 0;
+  padding-top: 32px;
+  padding-bottom: 8px;
+}
+
+.footer {
+  font-weight: normal;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 12px;
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
+
+    &:not(:first-child):before {
+      content: '\a0\b7\a0'
+    }
+  }
+
+
+    .upToTablet({
+      .notFixed;
+    });
+
+    .longAndThin({
+      .notFixed;
+      });
+
+}
+
+.contact-form-message {
+  position: fixed !important;
+  margin: 0 !important;
+  text-align: left;
+  top: 1.2rem;
+  right: 1.2rem;
+  display: block;
+}

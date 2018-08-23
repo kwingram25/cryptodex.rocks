@@ -1,0 +1,20 @@
+@import '../../breakpoints.less';
+
+@pageBackground: #222;
+@textColor: rgba(255, 255, 255, 0.87);
+
+/* This adjusts the default form input across all elements */
+@inputBackground        : #333;
+@inputColor: @textColor;
+
+/* Input Text Color */
+@inputPlaceholderColor: lighten(@inputColor, 75);
+@inputPlaceholderFocusColor: lighten(@inputColor, 45);
+
+@negativeBackgroundColor : #e4b0b0;
+@negativeBorderColor : #9F3A38;
+
+@positiveBackgroundColor : #e8ffb2;
+
+@loaderFillColor         : rgba(155, 155, 155, 0.3);
+@loaderLineColor         : @white;

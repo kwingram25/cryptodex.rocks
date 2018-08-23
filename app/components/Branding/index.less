@@ -1,0 +1,59 @@
+@import '../../../theme/breakpoints.less';
+
+.cryptodex-logo {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  overflow: hidden;
+  padding: 0 0 0.8rem;
+  margin-bottom: 0;
+  border: none;
+  font-family: "NovaMono", Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 5rem;
+  color: #92c4ef;
+  // -webkit-background-clip: text;
+  // background-clip: text;
+  // background-image: -webkit-radial-gradient(circle at center, #92c4ef 0, #77a3cb 100%);
+  // background-image: -moz-radial-gradient(circle at center, #92c4ef 0, #77a3cb 100%);
+  // background-image: radial-gradient(circle at center, #92c4ef 0, #77a3cb 100%);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-transform: lowercase;
+
+  .upToTablet({
+    font-size: 4rem;
+    padding: 0;
+    })
+}
+
+
+.branding {
+  margin-bottom: 32px !important;
+
+  // > * {
+  //   .upToTablet({
+  //     display: inline-block;
+  //   })
+  // }
+
+  // .upToTablet({
+  //   display: flex;
+  //   justify-content: center;
+  // });
+  //
+  // .mobile({
+  //   display: block;
+  // });
+}
+
+#cryptodex-icon {
+  // flex: 0 120px auto;
+  transform: rotate(-8deg);
+  margin-bottom: 16px;
+
+  // .upToTablet({
+  //   margin-right: 32px;
+  // })
+};

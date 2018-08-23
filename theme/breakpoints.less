@@ -1,0 +1,63 @@
+/*-------------------
+     Breakpoints
+--------------------*/
+
+@mobileBreakpoint            : 380px;
+@tabletBreakpoint            : 862px;
+@computerBreakpoint          : 992px;
+@largeMonitorBreakpoint      : 1200px;
+@widescreenMonitorBreakpoint : 1920px;
+
+.notMobile(@rules) {
+  @media only screen and (min-width: (@mobileBreakpoint)) {
+      @rules();
+  }
+}
+
+.mobile(@rules) {
+    @media only screen and (max-width: (@mobileBreakpoint - 1)) {
+        @rules();
+    }
+}
+
+.tablet(@rules) {
+    @media only screen and (min-width: @tabletBreakpoint) and (max-width: (@computerBreakpoint - 1px)) {
+      @rules();
+    }
+}
+
+.upToTablet(@rules) {
+  @media only screen and (max-width: (@tabletBreakpoint - 1)) {
+    @rules();
+  }
+}
+
+.downToTablet(@rules) {
+  @media only screen and (min-width: @tabletBreakpoint) {
+    @rules();
+  }
+}
+
+.normal(@rules) {
+    @media only screen and (min-width: @computerBreakpoint) and (max-width: (@largeMonitorBreakpoint - 1px)) {
+      @rules();
+    }
+}
+
+.large(@rules) {
+  @media only screen and (min-width: @largeMonitorBreakpoint) and (max-width: (@widescreenMonitorBreakpoint - 1px)) {
+    @rules();
+  }
+}
+
+.widescreen(@rules) {
+  @media only screen and (min-width: @widescreenMonitorBreakpoint) {
+    @rules();
+  }
+}
+
+.longAndThin(@rules) {
+  @media only screen and (min-width: @computerBreakpoint) and (max-height: 600px) {
+    @rules();
+  }
+}

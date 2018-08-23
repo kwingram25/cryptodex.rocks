@@ -1,0 +1,142 @@
+@import '../../../theme/breakpoints.less';
+
+@borderWidth: 2px;
+
+.homepage-slider {
+  max-height: 560px;
+}
+
+.homepage-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > h3 {
+    color: #a5d5ff;
+    font-size: 1.6rem;
+    text-shadow: 0 4px rgba(0, 0, 0, 0.5);
+
+    .upToTablet({
+      font-size: 1.4rem;
+    });
+
+    .mobile({
+      font-size: 1.2rem;
+      });
+  }
+}
+
+.image-wrapper {
+
+}
+
+.wrapper {
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  overflow-y: visible;
+
+  > div {
+    background: #000;
+    min-height: 100%;
+    max-width: 480px;
+
+    .normal({
+      max-width: 380px;
+    });
+
+    .tablet({
+      max-width: 320px;
+      });
+
+      .longAndThin({
+        max-width: 320px;
+      });
+
+      .upToTablet({
+        max-width: 360px;
+        });
+
+        .mobile({
+          max-width: 300px;
+          });
+  }
+
+  video, img {
+    border: 2px solid #AAA;
+  }
+
+  &.video, &.image {
+
+    .normal({
+      height: 380px;
+    });
+
+    .tablet({
+      height: 320px;
+    });
+
+    .upToTablet({
+      height: 360px;
+      });
+
+      .mobile({
+        height: 300px;
+        });
+    //
+    // .mobile({
+    //   min-height: 300px;
+    //   });
+
+    .longAndThin({
+      height: 320px;
+    });
+  }
+
+  &.image {
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .controls, .buffering {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+  }
+
+  .buffering {
+    display: flex;
+    min-height: initial;
+    justify-content: center;
+    margin-top: -15px;
+    width: initial;
+    background: transparent;
+  }
+
+  .controls {
+    font-size: 42px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.2s;
+    z-index: 4000;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+// @media only screen and (max-height: 600px) {
+//   .homepage-slider, .homepage-slide {
+//     max-height: 400px;
+//   }
+//
+//   .video-wrapper {
+//     height: 360px;
+//   }
+//
+//   .slick-list {
+//     height: 400px;
+//   }
+// }
